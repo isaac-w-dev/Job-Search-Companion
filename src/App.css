@@ -3,16 +3,17 @@
   padding: 2rem;
   text-align: center;
 }
-body{
+
+body {
   background-color: white;
   display: flex;
 }
 
-h1{
+h1 {
   color: black;
 }
 
-img{
+img {
   height: 600px;
 }
 
@@ -21,17 +22,22 @@ button {
   width: 500px;
 }
 
+li {
+  font-size: 35px;
+}
+
 p {
   font-size: 40px;
   margin-top: 15px;
   color: white;
 }
 
-.component{
+.component {
   background-color: #007298;
   padding: 100px;
   border-radius: 50px
 }
+
 div {
   margin: 50px;
 }
@@ -43,10 +49,10 @@ div {
 button {
   background-color: #007298;
   padding-bottom: 50px;
-  margin:30px;
+  margin: 30px;
 }
 
-#homepage{
+#homepage {
   flex-direction: column;
   display: flex;
   align-items: center;

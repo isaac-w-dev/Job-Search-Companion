@@ -3,4 +3,7 @@ const changeHandler = (e, setter, getter) => {
         ...getter, [e.target.name]: !getter[e.target.name]
     }))
 }
-export { changeHandler }
+const handleButtonNavigate = (navigate, route) => {
+    navigate(route)
+}
+export { changeHandler, handleButtonNavigate }
