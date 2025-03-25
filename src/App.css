@@ -8,6 +8,10 @@ body{
   display: flex;
 }
 
+h1{
+  color: black;
+}
+
 img{
   height: 600px;
 }
@@ -39,4 +43,11 @@ div {
 button {
   background-color: #007298;
   padding-bottom: 50px;
+  margin:30px;
+}
+
+#homepage{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
