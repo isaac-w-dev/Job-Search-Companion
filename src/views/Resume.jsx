@@ -23,9 +23,6 @@ const Resume = () => {
         formatting: false
     })
     const navigate = useNavigate()
-    // useEffect(() => {
-
-    // })
     return (
         <div className='main'>
             <img src={csLogo} alt='Career Services Logo'></img>
