@@ -10,11 +10,11 @@ const Home = () => {
             <br />
             <h1>What do you need help with?</h1>
             <button onClick={() => handleButtonNavigate(navigate, '/resume')}>Resume</button>
-            <button onClick={() => handleButtonNavigate(navigate, '/coverletter')}>Cover Letter</button>
+            {/* <button onClick={() => handleButtonNavigate(navigate, '/coverletter')}>Cover Letter</button>
             <button onClick={() => handleButtonNavigate(navigate, '/networking')}>Networking</button>
             <button onClick={() => handleButtonNavigate(navigate, '/interviewing')}>Interviewing</button>
             <button onClick={() => handleButtonNavigate(navigate, '/thankyounote')}>Thank You Note</button>
-            <button onClick={() => handleButtonNavigate(navigate, '/professionaldevelopment')}>Professional Development</button>
+            <button onClick={() => handleButtonNavigate(navigate, '/professionaldevelopment')}>Professional Development</button> */}
         </div>
     )
 }

@@ -32,6 +32,10 @@ p {
   color: white;
 }
 
+.coverletter {
+  color: black;
+}
+
 .component {
   background-color: #007298;
   padding: 100px;
