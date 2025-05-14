@@ -1,4 +1,4 @@
-const changeHandler = (e, setter, getter) => {
+const changeHandler = (e, getter, setter) => {
     setter((getter) => ({
         ...getter, [e.target.name]: !getter[e.target.name]
     }))

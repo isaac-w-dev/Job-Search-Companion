@@ -1,30 +1,43 @@
-import React from 'react'
-
-const GeneralTips = () => {
+import { React, useState } from 'react'
+import { changeHandler } from '../../functions/ResumeFunctions'
+const GeneralTips = (props) => {
+  const [getCategories, setCategories] = useState({
+    customization: false,
+    skimmability: false,
+    professionalism: false
+  })
+  const [getSubCategories, setSubCategories] = useState({
+    nameJobTitle: false,
+    keywords: false,
+    reverseChronological: false
+  })
+  const { getClick } = props;
+  const { setClick } = props;
   return (
-    <div className='component'>
-      <p>
-        Most important tip: Always tailor your resume to each employer you apply to.
-        <br />
-        A few targeted applications have a much better chance of catching an employers attention, as opposed to a very general application and mass applying to jobs
-        <br/>
-        Employers can tell when you just want a job, and don't care who with. By adding a few indications in your resume that it is personal to that company, you increase your chances significantly
-        <br/>
-        Here's a few ways you can indicate to the company that you tailored it specifically to them:
-      </p>
-      <ul>
-        <li>Name your document after the company, position, your name, and the kind of document</li>
-        <li>Ex. Cover_Letter_Company_Position_YourName</li>
-        <li>Include the name of the company in your summary</li>
-        <li>Use as many key words from the job posting as possible</li>
-      </ul>
-      <p>Hiring managers only spend about 7 seconds looking at any given resume. With this in mind it is important to:</p>
-      <ul>
-        <li>Focus your resume solely on demonstrating traits and skills that directly transfer to the job you are applying</li>
-        <li>Keep your resume to a single page for entry-level positions</li>
-        <li>Order your resume from most important to least important for the employer to know</li>
-        <li>Format your resume so that it is easy to skim this means using spacing, bold fonts, and headings appropriately</li>
-      </ul>
+    <div id='general-tips'>
+      <h1 className='white-title'>General Tips</h1>
+      <div className='component-content'>
+        <div className='subcomponent'>
+          <button className='subcomponent-button' name='customization' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Customize Resume for Each Employer</button>
+          {getCategories.customization ?
+            <div>
+              <h1>Use the company's name and the job title throughout your document</h1>
+              <h1>Use keywords from the job posting</h1>
+              <h1>Focus on how your background makes you qualified for the job</h1>
+              <h1>A little bit of extra effort goes a long way</h1>
+            </div>
+            :
+            <br />
+          }
+        </div>
+        <div className='subcomponent'>
+          <button className='subcomponent-button' name='skimmability' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Make your resume as easy to skim as possible</button>
+        </div>
+        <div className='subcomponent'>
+          <button className='subcomponent-button' name='professionalism' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Keep your resume professional</button>
+        </div>
+      </div>
+      <button name='generalTips' onClick={(e) => changeHandler(e, getClick, setClick)}>Collapse</button>
     </div>
   )
 }
