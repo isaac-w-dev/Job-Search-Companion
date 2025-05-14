@@ -2,7 +2,7 @@ import React from 'react'
 
 const Achievements = () => {
   return (
-    <div>
+    <div id='achievements'>
         <p>Relevant awards from work</p>
         <p>Academic Scholarships</p>
     </div>
