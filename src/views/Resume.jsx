@@ -1,7 +1,15 @@
 import React from 'react'
+import Header from '../components/Resume/Header'
 import { useState } from 'react'
+import Summary from '../components/Resume/Summary'
+import Skills from '../components/Resume/Skills'
+import WorkExperience from '../components/Resume/WorkExperience'
 import { changeHandler, handleButtonNavigate } from '../functions/ResumeFunctions'
 import csLogo from '../assets/DeptLogos_CareerServ.jpg'
+import Projects from '../components/Resume/Projects'
+import Education from '../components/Resume/Education'
+import GeneralTips from '../components/Resume/GeneralTips'
+import Formatting from '../components/Resume/Formatting'
 import { useNavigate } from 'react-router-dom'
 const Resume = () => {
     const [getClick, setClick] = useState({
