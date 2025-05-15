@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorkExperience = () => {
     return (
-        <div className='component'>
+        <div className='category'>
             <p>Use concise bullets over long descriptions.</p>
             <p>Solely focus on bullets that demonstrate skills that transfer to the job you are applying.</p>
             <p>Even if you have a job not relevant to the job you are applying you can list bullets demonstrating soft skills learned in the environment ex. Working in a fast-paced environment.</p>

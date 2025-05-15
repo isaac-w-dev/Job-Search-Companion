@@ -4,26 +4,39 @@
   text-align: center;
 }
 
-body {
-  background-color: white;
+#homepage {
+  flex-direction: column;
   display: flex;
-}
-
-
-img {
-  height: 600px;
-}
-
-button {
-  font-size: 50px;
-  width: 500px;
+  align-items: center;
 }
 
 /* * {
   border: 1px solid black
 } */
-li {
-  font-size: 35px;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: white;
+  display: flex;
+}
+
+div {
+  margin: 50px;
+  display: flex;
+}
+
+img {
+  height: 600px;
+}
+
+h1 {
+  color: #007298;
+  padding: 30px;
 }
 
 p {
@@ -32,76 +45,80 @@ p {
   color: white;
 }
 
-.coverletter {
-  color: black;
-}
-
-.component {
-  background-color: #007298;
-  padding: 100px;
-  border-radius: 50px;
-}
-
-div {
-  margin: 50px;
-}
-
-.component-content {
-  display: flex;
-  background-color: #007298;
-  border-radius: 50px;
-}
-
-#general-tips {
+.category {
   display: flex;
   flex-direction: column;
   background-color: #007298;
   border-radius: 50px;
   align-items: center;
+}
+
+.category-content {
+  display: flex;
+  background-color: #007298;
+  border-radius: 50px;
+}
+
+.subcategory {
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subcategory-button {
+  background-color: white;
+  color: #007298;
+  width: 700px;
+}
+
+.subcategory-content{
+
+}
+
+.subcategory-item{
+  
+}
+
+.subcategory-item-button{
+
+}
+
+.subcategory-item-content{
+
+}
+
+.white {
+  background-color: white;
+  color: #007298
+}
+
+.teal {
+  background-color: #007298;
+  color: white;
 }
 
 .white-title {
   color: white
 }
 
-button:hover{
-  background-color: white;
-  color: #007298;
-  
+button:hover {
+  /* background-color: white;
+  color: #007298; */
+  filter: drop-shadow(15px 15px 5px black)
 }
+
 button {
   background-color: #007298;
   padding-bottom: 50px;
   margin: 30px;
+  font-size: 50px;
+  width: 500px;
   border-radius: 45px;
   font-weight: bold;
   filter: drop-shadow(5px 5px 5px black)
 }
 
-.subcomponent {
-  background-color: white;
-  border-radius: 50px;
-}
-
-h1 {
-  color: #007298;
-  padding: 30px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.subcomponent-button {
-  background-color: white;
-  color: #007298;
-  width: 700px;
-}
-
-#homepage {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+.coverletter {
+  color: black;
 }

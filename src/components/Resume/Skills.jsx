@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skills = () => {
     return (
-        <div className='component'>
+        <div className='category'>
             <p>This is a great place to list skills that apply to you that are in the job description.</p>
             <p>Split into two headers both technical skills and functional skills</p>
             <p>Bonus if you keep similar technical skills grouped together ex. Programming Languages, Social Skills, Medical Knowledge</p>

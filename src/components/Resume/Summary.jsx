@@ -2,7 +2,7 @@ import React from 'react'
 
 const Summary = () => {
     return (
-        <div className='component'>
+        <div className='category'>
             <p>3-4 Sentences at most on what makes you qualified</p>
             <p>This will be where you give the employer a preview of what to look for in your resume.</p>
             <p>Avoid using your name or any kind of pronouns (I/Me/My/He/She/They etc.)</p>

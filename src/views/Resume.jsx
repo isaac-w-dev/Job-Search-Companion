@@ -26,7 +26,7 @@ const Resume = () => {
     return (
         <div className='main'>
             <img src={csLogo} alt='Career Services Logo'></img>
-            {getClick.generalTips ? <GeneralTips getClick={getClick} setClick={setClick} /> : <button name='generalTips' onClick={(e) => changeHandler(e, getClick, setClick)}>General Tips</button>}
+            {getClick.generalTips ? <GeneralTips getClick={getClick} setClick={setClick} /> : <button name='generalTips' className='teal' onClick={(e) => changeHandler(e, getClick, setClick)}>General Tips</button>}
             {getClick.formatting ? <Formatting /> : <button name='formatting' onClick={(e) => changeHandler(e, getClick, setClick)}>Formatting</button>}
             {getClick.header ? <Header /> : <button name='header' onClick={(e) => changeHandler(e, getClick, setClick)}>Header</button>}
             {getClick.summary ? <Summary /> : <button name='summary' onClick={(e) => changeHandler(e, getClick, setClick)}>Summary</button>}

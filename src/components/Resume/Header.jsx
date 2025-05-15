@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className='component'>
+        <div className='category'>
             <p>Use your name, city of residence, phone number, email, and relevant webpages (ex. Github or LinkedIn)</p>
             <p>Email is appropriate for professional use</p>
             <p>Try to keep these as condensed as possible, while still maintaining readability (2 lines or 3 at most)</p>
