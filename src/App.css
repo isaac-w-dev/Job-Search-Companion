@@ -73,11 +73,14 @@ p {
 }
 
 .subcategory-content{
-
+  display: flex;
+  flex-direction: column;
 }
 
 .subcategory-item{
-  
+  display: flex;
+  border-radius: 50px;
+  margin: 20px;
 }
 
 .subcategory-item-button{
@@ -85,7 +88,12 @@ p {
 }
 
 .subcategory-item-content{
+  display: flex;
+  flex-direction: column;
+}
 
+.bullet{
+  border-radius: 25px;
 }
 
 .white {
