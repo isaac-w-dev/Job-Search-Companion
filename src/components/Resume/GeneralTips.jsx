@@ -8,7 +8,8 @@ const GeneralTips = (props) => {
   })
   const [getSubCategories, setSubCategories] = useState({
     keywords: false,
-    additional: false
+    additional: false,
+    tenSecondRule: false
   })
   const { getClick } = props;
   const { setClick } = props;
@@ -35,14 +36,37 @@ const GeneralTips = (props) => {
                 :
                 <button name='keywords' className='subcategory-item-button' onClick={(e) => changeHandler(e, getSubCategories, setSubCategories)}>Include Keywords in Your Resume</button>
               }
-              <button name='additional' onClick={(e) => changeHandler(e, getSubCategories, setSubCategories)}className='subcategory-item-button'>Additional Customization Tips</button>
+              <button name='additional' onClick={(e) => changeHandler(e, getSubCategories, setSubCategories)} className='subcategory-item-button'>Additional Customization Tips</button>
             </div>
             :
             <br />
           }
         </div>
-        <div className='subcategory'>
-          <button className='subcategory-button' name='skimmability' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Make your resume as easy to skim as possible</button>
+        <div className={getCategories.skimmability ? 'subcategory  white' : 'subcategory'}>
+          {
+            getCategories.skimmability ?
+              <div className='subcategory-content'>
+                <button className='subcategory-button' name='skimmability' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Make your resume as easy to skim as possible</button>
+                <div className='subcategory-item'>
+                  {
+                    getSubCategories.tenSecondRule ?
+                      <div className='subcategory-item-content'>
+                        <button name='tenSecondRule' onClick={(e) => changeHandler(e, getCategories, setCategories)}>10 Second Rule</button>
+                      </div>
+                      :
+                      <button name='tenSecondRule' onClick={(e) => changeHandler(e, getCategories, setCategories)}>10 Second Rule</button>
+                  }
+                </div>
+                <div className='subcategory-item'>
+                  <button>10 Second Rule</button>
+                </div>
+                <div className='subcategory-item'>
+                  <button>10 Second Rule</button>
+                </div>
+              </div>
+              :
+              <button className='subcategory-button' name='skimmability' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Make your resume as easy to skim as possible</button>
+          }
         </div>
         <div className='subcategory'>
           <button className='subcategory-button' name='professionalism' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Keep your resume professional</button>

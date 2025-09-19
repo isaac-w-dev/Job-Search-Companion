@@ -45,6 +45,10 @@ p {
   color: white;
 }
 
+.heading {
+  font-size: 100px;
+}
+
 .category {
   display: flex;
   flex-direction: column;
@@ -70,29 +74,30 @@ p {
   background-color: white;
   color: #007298;
   width: 700px;
+
 }
 
-.subcategory-content{
+.subcategory-content {
   display: flex;
   flex-direction: column;
 }
 
-.subcategory-item{
+.subcategory-item {
   display: flex;
   border-radius: 50px;
   margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.subcategory-item-button{
+/* .subcategory-item-button {} */
 
-}
-
-.subcategory-item-content{
+.subcategory-item-content {
   display: flex;
   flex-direction: column;
 }
 
-.bullet{
+.bullet {
   border-radius: 25px;
 }
 
