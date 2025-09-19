@@ -3,11 +3,15 @@ import React from 'react'
 const Header = () => {
     return (
         <div className='category'>
-            <p>Use your name, city of residence, phone number, email, and relevant webpages (ex. Github or LinkedIn)</p>
-            <p>Email is appropriate for professional use</p>
-            <p>Try to keep these as condensed as possible, while still maintaining readability (2 lines or 3 at most)</p>
-            <p>Separate phone number with dashes or spaces for readability ex. (614) 555-5555</p>
-            <p>This will be the only part of your resume that will contain your name.</p>
+            <h2>Header</h2>
+            <ul>
+                <li>Line 1: first and last name</li>
+                <li>Line 2: City, State of residence | Phone number you can be reached at in this format: (555)-555-5555 | Email that is appropriate for professional use</li>
+                <li>Line 2 or Line 3 if no room: LinkedIn, GitHub(If computer science major), Personal website</li>
+                <li>Ex. John Doe</li>
+                <li>Columbus, Ohio | (777) 777-7777 | johndoe15@gmail.com</li>
+                <li>LinkedIn address | GitHub | Personal Website</li>
+            </ul>
         </div>
     )
 }
