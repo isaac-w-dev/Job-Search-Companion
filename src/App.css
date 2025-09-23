@@ -16,6 +16,9 @@ h1 {color: #007298; padding: 30px;}
 
 p {font-size: 40px; margin-top: 15px; color: white;}
 
+.inline{display: flex;}
+.column{display: flex; flex-direction: column;}
+
 .category {display: flex; flex-direction: column; background-color: #007298; border-radius: 50px; align-items: center;}
 
 .category-content {display: flex; background-color: #007298; border-radius: 50px;}

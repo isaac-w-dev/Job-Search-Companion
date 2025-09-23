@@ -27,15 +27,19 @@ const Resume = () => {
         <div className='main'>
             <img src={csLogo} alt='Career Services Logo'></img>
             <h1>Resume Advice</h1>
-            {/* {getClick.generalTips ? <GeneralTips getClick={getClick} setClick={setClick} /> : <button name='generalTips' className='teal' onClick={(e) => changeHandler(e, getClick, setClick)}>General Tips</button>} */}
-            {/* {getClick.formatting ? <Formatting /> : <button name='formatting' onClick={(e) => changeHandler(e, getClick, setClick)}>Formatting</button>} */}
-            {getClick.header ? <Header /> : <button name='header' onClick={(e) => changeHandler(e, getClick, setClick)}>Header</button>}
-            {getClick.summary ? <Summary /> : <button name='summary' onClick={(e) => changeHandler(e, getClick, setClick)}>Summary</button>}
-            {getClick.skills ? <Skills /> : <button name='skills' onClick={(e) => changeHandler(e, getClick, setClick)}>Skills</button>}
-            {getClick.workExperience ? <WorkExperience /> : <button name='workExperience' onClick={(e) => changeHandler(e, getClick, setClick)}>Work Experience</button>}
-            {getClick.projects ? <Projects /> : <button name='projects' onClick={(e) => changeHandler(e, getClick, setClick)}>Projects</button>}
-            {getClick.education ? <Education /> : <button name='education' onClick={(e) => changeHandler(e, getClick, setClick)}>Education</button>}
-            <button onClick={() => handleButtonNavigate(navigate, '/')}>Back</button>
+            <div className="inline">
+                {getClick.generalTips ? <GeneralTips getClick={getClick} setClick={setClick} /> : <button name='generalTips' className='teal' onClick={(e) => changeHandler(e, getClick, setClick)}>General Tips</button>}
+                <div className="column">
+                    {getClick.header ? <Header /> : <button name='header' onClick={(e) => changeHandler(e, getClick, setClick)}>Header</button>}
+                    {getClick.summary ? <Summary /> : <button name='summary' onClick={(e) => changeHandler(e, getClick, setClick)}>Summary</button>}
+                    {getClick.skills ? <Skills /> : <button name='skills' onClick={(e) => changeHandler(e, getClick, setClick)}>Skills</button>}
+                    {getClick.workExperience ? <WorkExperience /> : <button name='workExperience' onClick={(e) => changeHandler(e, getClick, setClick)}>Work Experience</button>}
+                    {getClick.projects ? <Projects /> : <button name='projects' onClick={(e) => changeHandler(e, getClick, setClick)}>Projects</button>}
+                    {getClick.education ? <Education /> : <button name='education' onClick={(e) => changeHandler(e, getClick, setClick)}>Education</button>}
+                    <button onClick={() => handleButtonNavigate(navigate, '/')}>Back</button>
+                </div>
+                {getClick.formatting ? <Formatting /> : <button name='formatting' onClick={(e) => changeHandler(e, getClick, setClick)}>Formatting</button>}
+            </div>
         </div>
     )
 }
