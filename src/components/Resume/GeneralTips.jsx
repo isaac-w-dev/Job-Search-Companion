@@ -1,77 +1,31 @@
 import { React, useState } from 'react'
 import { changeHandler } from '../../functions/ResumeFunctions'
 const GeneralTips = (props) => {
-  const [getCategories, setCategories] = useState({
-    customization: false,
-    skimmability: false,
-    professionalism: false
-  })
-  const [getSubCategories, setSubCategories] = useState({
-    keywords: false,
-    additional: false,
-    tenSecondRule: false
-  })
-  const { getClick } = props;
-  const { setClick } = props;
   return (
-    <div className='category'>
-      <button name='generalTips' onClick={(e) => changeHandler(e, getClick, setClick)}>General Tips</button>
-      <div className='category-content'>
-        <div className={getCategories.customization ? 'subcategory white' : 'subcategory'}>
-          <button className='subcategory-button' name='customization' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Customize Resume for Each Employer</button>
-          {getCategories.customization ?
-            <div className='subcategory-content'>
-              {getSubCategories.keywords ?
-                <div className='subcategory-item teal'>
-                  <button name='keywords' className='subcategory-item-button' onClick={(e) => changeHandler(e, getSubCategories, setSubCategories)}>Include Keywords in Your Resume</button>
-                  <div className='subcategory-item-content'>
-                    <h1 className='white bullet'>Minimum Qualifications</h1>
-                    <h1 className='white bullet'>Mindset</h1>
-                    <h1 className='white bullet'>Preferred but not required</h1>
-                    <h1 className='white bullet'>Values Stated on the company website</h1>
-                    <h1 className='white bullet'>Include company name and job title</h1>
-                    <h1 className='white bullet'>Name resume after company: ex. 	Resume_Company_Position_YourName</h1>
-                  </div>
-                </div>
-                :
-                <button name='keywords' className='subcategory-item-button' onClick={(e) => changeHandler(e, getSubCategories, setSubCategories)}>Include Keywords in Your Resume</button>
-              }
-              <button name='additional' onClick={(e) => changeHandler(e, getSubCategories, setSubCategories)} className='subcategory-item-button'>Additional Customization Tips</button>
-            </div>
-            :
-            <br />
-          }
-        </div>
-        <div className={getCategories.skimmability ? 'subcategory  white' : 'subcategory'}>
-          {
-            getCategories.skimmability ?
-              <div className='subcategory-content'>
-                <button className='subcategory-button' name='skimmability' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Make your resume as easy to skim as possible</button>
-                <div className='subcategory-item'>
-                  {
-                    getSubCategories.tenSecondRule ?
-                      <div className='subcategory-item-content'>
-                        <button name='tenSecondRule' onClick={(e) => changeHandler(e, getCategories, setCategories)}>10 Second Rule</button>
-                      </div>
-                      :
-                      <button name='tenSecondRule' onClick={(e) => changeHandler(e, getCategories, setCategories)}>10 Second Rule</button>
-                  }
-                </div>
-                <div className='subcategory-item'>
-                  <button>10 Second Rule</button>
-                </div>
-                <div className='subcategory-item'>
-                  <button>10 Second Rule</button>
-                </div>
-              </div>
-              :
-              <button className='subcategory-button' name='skimmability' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Make your resume as easy to skim as possible</button>
-          }
-        </div>
-        <div className='subcategory'>
-          <button className='subcategory-button' name='professionalism' onClick={(e) => changeHandler(e, getCategories, setCategories)}>Keep your resume professional</button>
-        </div>
-      </div>
+    <div className='side-bar' id="general-tips">
+      <h1>General Tips</h1>
+        <h2>Tailor your resume to each company and position</h2>
+        <h3>Look for keywords to include in your resume<br/>
+        Some examples of keywords are:</h3>
+        <ul>
+          <li>Qualifications</li>
+          <li>Preferred but not required</li>
+          <li>Any descriptive words the company uses to describe the ideal employee in the job description or their hiring page.</li>
+          <li>Ex. Looking to hire a <b>self-starter</b> with a background in <b>Computer Science</b></li>
+          <li>You can move your resume sections around to make sure the employer sees the most relevant parts first.</li>
+        </ul>
+        <h3>Name your resume after the company and position</h3>
+        <h4>Example: Resume_Electrician_AEP_JohnDoe</h4>
+        <h2>Sound professional when writing your resume</h2>
+        <h3><b>Proofread! Proofread! Proofread!</b></h3>
+        <ul>
+          <li>Many reviewers will throw out your resume if they spot a typo or grammar issue</li>
+          <li>Having a second person look over your resume can make a huge difference</li>
+          <li>Avoid using pronouns (I/Me/My/He/She/They/It) or your name throughout your resume</li>
+        </ul>
+        <h2>Hiring managers only spend about 7 seconds looking at any given resume so, make your resume as easy to skim as possible</h2>
+        <ul>Keep your resume to a single page</ul>
+        <ul>Use concise bullets in place of longer descriptions</ul>
     </div>
   )
 }
